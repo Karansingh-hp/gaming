@@ -1,0 +1,559 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #03080c;
+    color: #f5f7f8;
+    line-height: 1.5
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.topbar {
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #03080cee;
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #26343b;
+    display: flex;
+    align-items: center;
+    padding: 0 5%
+}
+
+.brand {
+    font-size: 19px;
+    font-weight: 900
+}
+
+.brand span {
+    color: #ff1025
+}
+
+.mark {
+    display: inline-grid;
+    place-items: center;
+    background: #ff1025;
+    color: #fff !important;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    clip-path: polygon(0 20%, 80% 0, 100% 20%, 25% 50%, 100% 80%, 80% 100%, 0 80%, 45% 50%)
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    margin-left: 55px
+}
+
+nav a {
+    font-size: 11px;
+    color: #9ba6ac
+}
+
+nav a:hover {
+    color: #fff
+}
+
+.actions {
+    margin-left: auto;
+    display: flex;
+    gap: 9px;
+    align-items: center
+}
+
+.btn,
+.outline {
+    padding: 10px 17px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #ff1025
+}
+
+.btn {
+    background: #ff1025;
+    color: #fff
+}
+
+.outline {
+    background: none;
+    color: #fff
+}
+
+.hamb {
+    display: none;
+    background: none;
+    color: #fff;
+    border: 0;
+    font-size: 24px
+}
+
+.hero {
+    margin-top: 64px;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #020609f5, #02060955), url('assets/gamepulse-original.png') center/cover
+}
+.heroin{
+     margin-top: 64px;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #020609f5, #02060955), url('images.jpg') center/cover
+}
+
+.zero{
+     margin-top: 64px;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #020609f5, #02060955), url('images1.jpg') center/cover
+}
+.Amiri{
+     margin-top: 64px;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #020609f5, #02060955), url('images2.jpg') center/cover
+}
+
+
+.inner,
+.container {
+    width: 90%;
+    max-width: 1380px;
+    margin: auto
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.05;
+    margin: 8px 0
+}
+
+.red {
+    color: #ff1025
+}
+
+.eyebrow {
+    color: #ff1025;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.hero p {
+    max-width: 650px;
+    color: #a8b2b7;
+    font-size: 13px
+}
+
+.container {
+    padding: 42px 0
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px
+}
+
+.head h2 {
+    font-size: 23px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px
+}
+
+.card,
+.panel {
+    background: linear-gradient(145deg, #091218, #050b0f);
+    border: 1px solid #203039;
+    border-radius: 6px;
+    overflow: hidden
+}
+
+.card:hover {
+    border-color: #ff1025;
+    transform: translateY(-4px)
+}
+
+.card {
+    transition: .25s
+}
+
+.pic {
+    height: 210px;
+    background-image: linear-gradient(#0002, #0007), url('images\ 100.jpg');
+    background-size: 400% auto
+}
+
+.p1 {
+    background-position: 5% 25%
+}
+
+.p2 {
+    background-position: 35% 25%
+}
+
+.p3 {
+    background-position: 67% 25%
+}
+
+.p4 {
+    background-position: 94% 25%
+}
+
+.body {
+    padding: 15px
+}
+
+.body h3 {
+    font-size: 13px
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+    margin: 9px 0
+}
+
+.tags span {
+    font-size: 9px;
+    padding: 4px 7px;
+    background: #142129;
+    border: 1px solid #26353d;
+    border-radius: 20px;
+    color: #9da9ae
+}
+
+.rating {
+    font-size: 11px;
+    color: #ff1025
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    gap: 18px
+}
+
+.panel {
+    padding: 22px
+}
+
+.panel h2 {
+    margin-bottom: 9px
+}
+
+.muted {
+    font-size: 11px;
+    color: #8f9ba2
+}
+
+.list {
+    display: grid;
+    gap: 9px;
+    margin-top: 15px
+}
+
+.item {
+    padding: 14px;
+    background: #071015;
+    border: 1px solid #1d2a31;
+    display: flex;
+    justify-content: space-between
+}
+
+.item small {
+    display: block;
+    color: #7d898f;
+    font-size: 9px
+}
+
+.item strong {
+    font-size: 11px
+}
+
+.newsgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
+}
+
+.newsimg {
+    height: 190px;
+    background-image: linear-gradient(#0002, #0008), url('assets/gamepulse-original.png');
+    background-size: 300% auto
+}
+
+.n1 {
+    background-position: 8% 60%
+}
+
+.n2 {
+    background-position: 50% 60%
+}
+
+.n3 {
+    background-position: 92% 60%
+}
+
+.newsbody {
+    padding: 16px
+}
+
+.newsbody small {
+    color: #ff1025;
+    font-size: 9px
+}
+
+.newsbody h3 {
+    font-size: 14px;
+    margin: 6px 0
+}
+
+.newsbody p {
+    font-size: 10px;
+    color: #8d999f
+}
+
+.community {
+    min-height: 390px;
+    position: relative;
+    overflow: hidden
+}
+
+.community:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #050b0fed, #050b0f55), url('assets/gamepulse-original.png') center 70%/cover
+}
+
+.communitytext {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+    padding: 35px
+}
+
+.communitytext h2 {
+    font-size: 38px;
+    line-height: 1.05;
+    margin: 8px 0
+}
+
+.communitytext p {
+    color: #a0abb0;
+    font-size: 12px;
+    margin-bottom: 20px
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px
+}
+
+.stat {
+    background: #071015;
+    border: 1px solid #203039;
+    padding: 18px
+}
+
+.stat b {
+    display: block;
+    color: #ff1025;
+    font-size: 25px
+}
+
+.stat small {
+    color: #829097
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+.about h2 {
+    font-size: 29px;
+    margin: 8px 0 12px
+}
+
+.about p {
+    color: #9aa6ab;
+    font-size: 12px;
+    margin-bottom: 12px
+}
+
+.form {
+    display: grid;
+    gap: 12px;
+    margin-top: 15px
+}
+
+.form input,
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 13px;
+    background: #04090c;
+    color: #fff;
+    border: 1px solid #29373f;
+    border-radius: 5px
+}
+
+.form textarea {
+    min-height: 130px
+}
+
+.auth {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 90px 20px;
+    background: linear-gradient(#03080ccc, #03080caa), url('assets/gamepulse-original.png') center/cover
+}
+
+.authbox {
+    width: min(430px, 100%);
+    background: #071015f5;
+    border: 1px solid #29363d;
+    padding: 32px;
+    border-radius: 8px
+}
+
+.authbox h1 {
+    margin-top: 20px
+}
+
+.authbox p {
+    color: #87949a;
+    font-size: 11px;
+    margin: 7px 0 20px
+}
+
+footer {
+    padding: 35px 5%;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr) 1fr;
+    gap: 30px;
+    border-top: 1px solid #1b272d;
+    background: #020608
+}
+
+footer h4 {
+    color: #ff1025;
+    font-size: 10px;
+    margin-bottom: 12px
+}
+
+footer a:not(.brand) {
+    display: block;
+    color: #89949a;
+    font-size: 10px;
+    margin: 8px 0
+}
+
+.copy {
+    grid-column: 1/-1;
+    border-top: 1px solid #1b272d;
+    padding-top: 15px;
+    color: #657078;
+    font-size: 9px;
+    text-align: right
+}
+
+@media(max-width:950px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .two,
+    .about {
+        grid-template-columns: 1fr
+    }
+
+    nav {
+        gap: 12px;
+        margin-left: 25px
+    }
+}
+
+@media(max-width:700px) {
+    .topbar {
+        padding: 0 18px
+    }
+
+    .hamb {
+        display: block;
+        margin-left: auto;
+        margin-right: 8px
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        background: #050b0f;
+        flex-direction: column;
+        padding: 10px 20px
+    }
+
+    nav.open {
+        display: flex
+    }
+
+    nav a {
+        padding: 12px
+    }
+
+    .actions .outline {
+        display: none
+    }
+
+    .hero h1 {
+        font-size: 36px
+    }
+
+    .grid,
+    .newsgrid {
+        grid-template-columns: 1fr
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .copy {
+        grid-column: 1/-1
+    }
+}
